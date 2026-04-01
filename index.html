@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata Syifa Nafia</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* CSS AGAR PERSIS LINK YANG KAMU KASIH */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1e1e2f, #2a2a40);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            color: white;
+            scroll-behavior: smooth; /* Biar pas diklik gesernya halus */
+        }
+
+        /* Container Kartu Utama */
+        .main-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            width: 100%;
+            max-width: 400px;
+            border-radius: 20px;
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .profile-img {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            border: 3px solid #f093fb;
+            margin-bottom: 20px;
+        }
+
+        h1 { font-size: 1.6rem; margin-bottom: 10px; }
+        .sub { font-size: 0.9rem; opacity: 0.8; margin-bottom: 30px; }
+
+        /* LIST TOMBOL */
+        .btn-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.15);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: 0.3s ease;
+        }
+
+        .btn:hover {
+            background: linear-gradient(45deg, #f093fb, #f5576c);
+            transform: scale(1.03);
+            border: none;
+        }
+
+        .btn i { margin-right: 12px; }
+
+        /* BAGIAN DETAIL BIODATA (ID: detail) */
+        #detail {
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 1px dashed rgba(255,255,255,0.3);
+            text-align: left;
+        }
+
+        .info-item {
+            background: rgba(255,255,255,0.05);
+            padding: 12px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .label { font-size: 0.7rem; color: #f093fb; font-weight: bold; }
+        .value { font-size: 1rem; margin-top: 3px; }
+
+        .back-top {
+            display: block;
+            margin-top: 20px;
+            text-align: center;
+            color: #f093fb;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-card">
+        
+        <div id="home">
+            <img src="https://via.placeholder.com/150" alt="Syifa" class="profile-img">
+            <h1>Syifa Nafia</h1>
+            <p class="sub">SMK AL-HADIID 1 CILEUNGSI | TKJ</p>
+
+            <div class="btn-list">
+                <a href="#detail" class="btn">
+                    <i class="fas fa-user-circle"></i> Biodata Lengkap
+                </a>
+
+                <a href="laragon.png" class="btn" target="_blank">
+                    <i class="fas fa-desktop"></i> Screenshot Laragon
+                </a>
+
+                <a href="xampp.png" class="btn" target="_blank">
+                    <i class="fas fa-server"></i> Screenshot Xampp
+                </a>
+            </div>
+        </div>
+
+        <div id="detail">
+            <h2 style="text-align: center; margin-bottom: 20px;">Data Diri</h2>
+            
+            <div class="info-item">
+                <p class="label">Nama Lengkap</p>
+                <p class="value">Syifa Nafia</p>
+            </div>
+
+            <div class="info-item">
+                <p class="label">Sekolah</p>
+                <p class="value">SMK Al-Hadiid 1 Cileungsi</p>
+            </div>
+
+            <div class="info-item">
+                <p class="label">Jurusan</p>
+                <p class="value">Teknik Komputer & Jaringan</p>
+            </div>
+
+            <div class="info-item">
+                <p class="label">Keahlian</p>
+                <p class="value">Network Hacking & Server Admin</p>
+            </div>
+
+            <a href="#home" class="back-top">
+                <i class="fas fa-arrow-up"></i> Kembali ke Atas
+            </a>
+        </div>
+
+    </div>
+
+</body>
+</html>
